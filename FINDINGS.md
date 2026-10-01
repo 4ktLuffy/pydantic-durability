@@ -69,12 +69,12 @@ workflow-side I/O on any engine. Every defect below is in a capability's **tools
    decorate I/O tools with `@DBOS.step`, which a user cannot do to a shipped tool. On recovery
    each of these runs again:
 
-   | Capability | Repeats on recovery | Where |
+   | Capability | On recovery | Where |
    |---|---|---|
-   | `ExaSearch`, `ExaAgent` | paid Exa API calls | `exa/_toolset.py:191, 234`, `exa/_agent.py:176` |
-   | `YouSearch`, `YouResearch` | paid You.com API calls | `youdotcom/_toolset.py:329, 379`, `_research.py:139, 165, 191` |
-   | `LocalStack` | AWS CLI commands, temp files, health check | `localstack/_toolset.py:297, 298, 356` |
-   | `CapabilityCreation`, `RuntimeAuthoring` | writing model-authored modules and the manifest | `capability_creation/_store.py:69, 71, 100, 102` |
+   | `ExaSearch`, `ExaAgent` | makes the Exa API request again | `exa/_toolset.py:191, 234`, `exa/_agent.py:176` |
+   | `YouSearch`, `YouResearch` | makes the You.com API request again | `youdotcom/_toolset.py:329, 379`, `youdotcom/_research.py:139, 165, 191` |
+   | `LocalStack` | tries to start the AWS CLI again, re-creates its temp files, re-runs the health check | `localstack/_toolset.py:297, 298, 301, 356` |
+   | `CapabilityCreation`, `RuntimeAuthoring` | rewrites the authored module and the manifest | `capability_creation/_store.py:65-73, 100-102` |
 
    `FileSystem` and `Shell` are SAFE on DBOS because their I/O goes through the durable
    workspace (#8866). Wrapping a capability in `DynamicCapability` also works today: its tools then
