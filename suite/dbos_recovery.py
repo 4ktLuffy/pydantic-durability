@@ -21,12 +21,17 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+import run_grid  # noqa: E402,F401  (sets the offline tokens before any capability is built)
 import grid  # noqa: E402
 import grid_selection  # noqa: E402
 
 from dbos import DBOS, SetWorkflowID  # noqa: E402
 
 AUTHORED = grid.SCRATCH / 'capability_creation'
+CASES_UNDER_TEST = sys.argv[1:] or [
+    'CapabilityCreation', 'RuntimeAuthoring', 'LocalStack', 'ExaSearch', 'ExaAgent', 'YouSearch', 'YouResearch',
+    'ExaSearch[dynamic]',
+]
 
 
 def ledger(kind: str) -> int:
@@ -39,12 +44,14 @@ def ledger(kind: str) -> int:
 
 
 def writes_since(marker: int) -> list[str]:
-    return [e.detail for e in grid.AUDIT.events[marker:] if e.event == 'open']
+    """Every side effect recorded in workflow code since `marker`: writes, processes, name lookups."""
+    return [f'{e.event} {e.detail[:60]} @ {e.where}' for e in grid.AUDIT.events[marker:]]
 
 
 async def first_run_then_recover(case: str, workflow_fn: Any) -> dict[str, Any]:
     grid_selection.CURRENT = case
-    grid.built(case, rebuild=True)
+    if grid.built(case, rebuild=True).agent is None:
+        raise RuntimeError(f'{case} could not be built: {grid.built(case).error}')
     workflow_id = f'recovery-{case}-{uuid.uuid4()}'
     grid.AUDIT.events.clear()
     kind = {'Control[unprotected]': 'unprotected', 'Control[durable_operation]': 'protected'}.get(case)
@@ -74,7 +81,8 @@ async def first_run_then_recover(case: str, workflow_fn: Any) -> dict[str, Any]:
         'ledger_lines_on_recovery': after_recovery - after_first,
         'writes_first_run': len(first_writes),
         'writes_on_recovery': len(recovery_writes),
-        'recovery_write_targets': sorted({w.split(',')[0] for w in recovery_writes}),
+        'first_run_effects': first_writes[:12],
+        'recovery_effects': recovery_writes[:12],
     }
 
 
@@ -95,11 +103,13 @@ def main() -> None:
         return (await grid.built(case).agent.run('go')).output  # type: ignore[union-attr]
 
     async def run_all() -> list[dict[str, Any]]:
-        return [
+        rows = [
             await first_run_then_recover('Control[unprotected]', orchestrate),
             await first_run_then_recover('Control[durable_operation]', orchestrate),
-            await first_run_then_recover('CapabilityCreation', orchestrate),
         ]
+        for case in CASES_UNDER_TEST:
+            rows.append(await first_run_then_recover(case, orchestrate))
+        return rows
 
     try:
         rows = asyncio.run(run_all())

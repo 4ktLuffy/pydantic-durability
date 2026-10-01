@@ -25,14 +25,22 @@ BROKEN (Temporal: the sandbox refuses the write, SANDBOX) and the second SAFE. T
 development a harness change silently flipped the unprotected control to SAFE; both times the
 control caught it before any result was reported.
 
-**Recovery, demonstrated rather than inferred** (`suite/dbos_recovery.py`): run a DBOS workflow,
-then fork it after its last recorded step, which is what recovery of a committed run does.
+**Recovery, demonstrated rather than inferred** (`suite/dbos_recovery.py`, main at `48e5d7f`): run a
+DBOS workflow with every tool called once, then fork it after its last recorded step, which is what
+recovery of a committed run does, and record the I/O made from workflow code.
 
-| Case | file writes, first run | repeated on recovery |
+| Case | I/O from workflow code, first run | repeated on recovery |
 |---|---|---|
-| Control: write in hook | 2 | **+2** |
-| Control: write via `@durable_operation` | 2 | **+0** |
-| `CapabilityCreation` (shipped) | 5 (the module and its manifest) | **+5** |
+| Control: write in hook | 2 | **2** |
+| Control: write via `@durable_operation` | 0 (2 ledger lines, written in steps) | **0** |
+| `CapabilityCreation`, `RuntimeAuthoring` | 10 (module, manifest, directories, renames) | **10** |
+| `LocalStack` | 11 (temp files, AWS CLI start, health check) | **9** (the same, minus Python's once-per-process temp-directory check) |
+| `ExaSearch` / `ExaAgent` | 2 / 1 Exa API requests | **2 / 1** |
+| `YouSearch` / `YouResearch` | 2 / 3 You.com API requests | **2 / 3** |
+| `ExaSearch` wrapped in `DynamicCapability` | 0 (its requests run in DBOS steps) | **0** |
+
+The network is blocked during the run, so an API "request" here is the request being started again,
+not a second billed call.
 
 ## Result
 
@@ -48,19 +56,15 @@ workflow-side I/O on any engine. Every defect below is in a capability's **tools
 
 ## New: no open issue found
 
-1. **`Capability(instructions=...)` cannot be used with Temporal or Prefect.** It has no tools,
-   yet contributes an empty `FunctionToolset` with `id=None`, which both engines refuse at
-   construction. DBOS accepts it. `Researcher` hits this through its own
-   `Capability(instructions=...)`, so it stays broken even with every harness toolset given an
-   id. #9233 explicitly keeps user-configured capabilities at `id=None`, so it does not cover
-   this; the natural fix is for a capability to contribute no toolset when it has no tools.
+1. **`Researcher` cannot be used with Temporal or Prefect** (#9553). It adds its instructions with
+   `Capability(instructions=...)`, which builds a `FunctionToolset` without an `id`, and `Researcher`
+   has no `id` parameter. `Researcher(instructions=None)` works, so the workaround is to add the
+   instructions back in your own `Capability(instructions=..., id='...')`. A fixed `id` on that
+   internal capability (`researcher/_capability.py:60`) makes `Researcher` run on all three engines.
+   A plain `Capability(instructions=...)` is not itself the bug: with `id=` it works, and it keeps
+   its empty toolset on purpose so tools registered later are picked up.
 
-   ```python
-   Agent(model, capabilities=[Capability(instructions='Be brief.'), TemporalDurability()])
-   # UserError: Toolsets that are 'leaves' ... need to have a unique `id`
-   ```
-
-2. **On DBOS, seven harness capabilities do raw I/O in workflow code.** DBOS wraps only MCP and
+2. **On DBOS, seven harness capabilities repeat their I/O when a run recovers** (#9554). DBOS wraps only MCP and
    dynamic toolsets; function tools run in the workflow, and the documented remedy is to
    decorate I/O tools with `@DBOS.step`, which a user cannot do to a shipped tool. On recovery
    each of these runs again:
@@ -73,7 +77,8 @@ workflow-side I/O on any engine. Every defect below is in a capability's **tools
    | `CapabilityCreation`, `RuntimeAuthoring` | writing model-authored modules and the manifest | `capability_creation/_store.py:69, 71, 100, 102` |
 
    `FileSystem` and `Shell` are SAFE on DBOS because their I/O goes through the durable
-   workspace, so the pattern to follow already exists in the harness.
+   workspace (#8866). Wrapping a capability in `DynamicCapability` also works today: its tools then
+   run as DBOS steps.
 
 3. **`ExaSearch` and `ExaAgent` cannot be constructed inside Temporal's workflow sandbox**
    (`RestrictedWorkflowAccessError` on `http.client`) unless `exa_py` is added to the
@@ -111,5 +116,3 @@ its CLI on `PATH`.
   non-determinism without I/O (a `uuid4()` or `random` value in workflow code feeding a later
   durable unit); Temporal's sandbox catches some of that, DBOS and Prefect do not.
 - AWS Lambda durability is not covered yet.
-- The DBOS recovery demonstration covers `CapabilityCreation`; the other six DBOS rows are
-  audit results, not yet demonstrated by recovery.

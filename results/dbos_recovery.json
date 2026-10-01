@@ -10,8 +10,13 @@
     "ledger_lines_on_recovery": 2,
     "writes_first_run": 2,
     "writes_on_recovery": 2,
-    "recovery_write_targets": [
-      "('results/scratch/control-ledger.txt'"
+    "first_run_effects": [
+      "open ('results/ @ controls.py:29 in after_model_request",
+      "open ('results/ @ controls.py:29 in after_model_request"
+    ],
+    "recovery_effects": [
+      "open ('results/ @ controls.py:29 in after_model_request",
+      "open ('results/ @ controls.py:29 in after_model_request"
     ]
   },
   {
@@ -25,7 +30,8 @@
     "ledger_lines_on_recovery": 0,
     "writes_first_run": 0,
     "writes_on_recovery": 0,
-    "recovery_write_targets": []
+    "first_run_effects": [],
+    "recovery_effects": []
   },
   {
     "case": "CapabilityCreation",
@@ -36,13 +42,197 @@
     "recorded_steps": 6,
     "ledger_lines_first_run": 0,
     "ledger_lines_on_recovery": 0,
-    "writes_first_run": 5,
-    "writes_on_recovery": 5,
-    "recovery_write_targets": [
-      "('results/scratch/capability_creation/manifest.p2v2i3jd.json.tmp'",
-      "('results/scratch/capability_creation/manifest.p3_pwn70.json.tmp'",
-      "('results/scratch/capability_creation/ok.py'",
-      "(10"
+    "writes_first_run": 10,
+    "writes_on_recovery": 10,
+    "first_run_effects": [
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:100 in write",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:102 in write",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+    ],
+    "recovery_effects": [
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:100 in write",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:102 in write",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
     ]
+  },
+  {
+    "case": "RuntimeAuthoring",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 6,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 10,
+    "writes_on_recovery": 10,
+    "first_run_effects": [
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:100 in write",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:102 in write",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+    ],
+    "recovery_effects": [
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:100 in write",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:102 in write",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest",
+      "os.mkdir ('results/ @ pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest",
+      "open ('results/ @ pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest",
+      "open (10, 'w', 16778753) @ pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest",
+      "os.rename ('results/ @ pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+    ]
+  },
+  {
+    "case": "LocalStack",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 5,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 11,
+    "writes_on_recovery": 9,
+    "first_run_effects": [
+      "open ('<tmp>/o5aedavq' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "os.remove ('<tmp>/o5aedavq' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:298 in _run",
+      "open ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:298 in _run",
+      "open (13, 'w', 16778753) @ pydantic_ai_harness/localstack/_toolset.py:301 in _run",
+      "subprocess.Popen ('aws', ['aws', '--endpoint-url', 'http://localhost.localsta @ pydantic_ai_harness/localstack/_toolset.py:301 in _run",
+      "os.remove ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:341 in _run",
+      "os.remove ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:342 in _run",
+      "loop.getaddrinfo 'localhost.localstack.cloud' @ pydantic_ai_harness/localstack/_toolset.py:356 in localstack_health"
+    ],
+    "recovery_effects": [
+      "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:298 in _run",
+      "open ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:298 in _run",
+      "open (13, 'w', 16778753) @ pydantic_ai_harness/localstack/_toolset.py:301 in _run",
+      "subprocess.Popen ('aws', ['aws', '--endpoint-url', 'http://localhost.localsta @ pydantic_ai_harness/localstack/_toolset.py:301 in _run",
+      "os.remove ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:341 in _run",
+      "os.remove ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:342 in _run",
+      "loop.getaddrinfo 'localhost.localstack.cloud' @ pydantic_ai_harness/localstack/_toolset.py:356 in localstack_health"
+    ]
+  },
+  {
+    "case": "ExaSearch",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 5,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 2,
+    "writes_on_recovery": 2,
+    "first_run_effects": [
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_toolset.py:191 in web_search",
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_toolset.py:234 in get_page"
+    ],
+    "recovery_effects": [
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_toolset.py:191 in web_search",
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_toolset.py:234 in get_page"
+    ]
+  },
+  {
+    "case": "ExaAgent",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 4,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 1,
+    "writes_on_recovery": 1,
+    "first_run_effects": [
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_agent.py:176 in exa_agent"
+    ],
+    "recovery_effects": [
+      "loop.getaddrinfo 'api.exa.ai' @ pydantic_ai_harness/exa/_agent.py:176 in exa_agent"
+    ]
+  },
+  {
+    "case": "YouSearch",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 5,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 2,
+    "writes_on_recovery": 2,
+    "first_run_effects": [
+      "loop.getaddrinfo 'ydc-index.io' @ pydantic_ai_harness/youdotcom/_toolset.py:329 in web_search",
+      "loop.getaddrinfo 'ydc-index.io' @ pydantic_ai_harness/youdotcom/_toolset.py:379 in get_page"
+    ],
+    "recovery_effects": [
+      "loop.getaddrinfo 'ydc-index.io' @ pydantic_ai_harness/youdotcom/_toolset.py:329 in web_search",
+      "loop.getaddrinfo 'ydc-index.io' @ pydantic_ai_harness/youdotcom/_toolset.py:379 in get_page"
+    ]
+  },
+  {
+    "case": "YouResearch",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 6,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 3,
+    "writes_on_recovery": 3,
+    "first_run_effects": [
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:139 in answer",
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:165 in research",
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:191 in finance_research"
+    ],
+    "recovery_effects": [
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:139 in answer",
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:165 in research",
+      "loop.getaddrinfo 'api.you.com' @ pydantic_ai_harness/youdotcom/_research.py:191 in finance_research"
+    ]
+  },
+  {
+    "case": "ExaSearch[dynamic]",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 11,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 0,
+    "writes_on_recovery": 0,
+    "first_run_effects": [],
+    "recovery_effects": []
   }
 ]

@@ -143,6 +143,12 @@ def _control(name: str) -> AbstractCapability[None]:
     return getattr(controls, name)()
 
 
+def _dynamic(factory: Any, id: str) -> AbstractCapability[None]:
+    from pydantic_ai.capabilities import DynamicCapability
+
+    return DynamicCapability(factory, id=id)
+
+
 def _fn() -> FunctionModel:
     return FunctionModel(judge_model)
 
@@ -264,6 +270,14 @@ def _cases() -> list[Case]:
             _dir('runtime_authoring'), id='grid_runtime_authoring'
         ),
     }
+    # A possible user-side workaround on DBOS: a `DynamicCapability` toolset runs as steps.
+    base.append(
+        c(
+            'ExaSearch[dynamic]',
+            'exa',
+            lambda: _dynamic(lambda ctx: _h('exa', 'ExaSearch')(), 'exa_dynamic'),
+        )
+    )
     return base + [c(f'{name}[id]', next(x.module for x in base if x.name == name), build) for name, build in with_id.items()]
 
 
