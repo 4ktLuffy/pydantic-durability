@@ -1,0 +1,10 @@
+[project]
+name = "pydantic-durability"
+version = "0.0.0"
+description = "A replay conformance suite for Pydantic AI capabilities under durable execution."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+anyio_mode = "auto"
+testpaths = ["suite"]
+markers = ["temporal: starts a local Temporal dev server"]

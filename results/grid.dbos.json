@@ -1,0 +1,1081 @@
+[
+  {
+    "case": "Control[unprotected]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side open at controls.py:29 in after_model_request",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "controls.py:29 in after_model_request"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "controls.py:29 in after_model_request"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Control[durable_operation]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Advisor",
+    "module": "advisor",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "AskUser",
+    "module": "ask_user",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "BackgroundTools",
+    "module": "background_tools",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "BubblewrapSandbox",
+    "module": "bubblewrap_sandbox",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "WarnOnCacheBusts",
+    "module": "cache_stability",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CacheStabilityMonitor",
+    "module": "cache_stability",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CapabilityCreation",
+    "module": "capability_creation",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CodeMode",
+    "module": "code_mode",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Coder",
+    "module": "coder",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "RepoContext",
+    "module": "repo_context",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ConversationSearch",
+    "module": "conversation_search",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "DayAI",
+    "module": "day_ai",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 115dc0d70 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 115dc0d70 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "day.ai"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "PyaiDocs",
+    "module": "docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "DynamicWorkflow",
+    "module": "dynamic_workflow",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "E2BSandbox",
+    "module": "e2b_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaSearch",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaAgent",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "FileSystem",
+    "module": "filesystem",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "GitHub",
+    "module": "github",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 1193028f0 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 1193028f0 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.githubcopilot.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Grain",
+    "module": "grain",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 119440690 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119440690 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.grain.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "ToolGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "InputGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "OutputGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Linear",
+    "module": "linear",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 119300690 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119300690 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.linear.app"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "LocalStack",
+    "module": "localstack",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ManagedPrompt",
+    "module": "logfire",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "LogfireMCP",
+    "module": "logfire_mcp",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 11981c230 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11981c230 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "logfire-us.pydantic.dev"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Macroscope",
+    "module": "macroscope",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ModalSandbox",
+    "module": "modal_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.3
+  },
+  {
+    "case": "Notion",
+    "module": "notion",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 11a2a2350 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11a2a2350 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.notion.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Ordinal",
+    "module": "ordinal",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 11a2a3a70 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11a2a3a70 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "app.tryordinal.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "OverflowingToolOutput",
+    "module": "overflowing_tool_output",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PlaywrightBrowser",
+    "module": "playwright",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "construct: UserError: PlaywrightBrowser does not support durable execution (e.g. TemporalDurability): a live Chromium browser cannot survive activity replay or worker restart. Run the browser agent outside the durable agent, or remove the durability capability.",
+    "events": []
+  },
+  {
+    "case": "PostHog",
+    "module": "posthog",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 11a9bb890 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11a9bb890 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.posthog.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "PromptInjectionDefender",
+    "module": "prompt_injection_defender",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PydanticAIDocs",
+    "module": "pydantic_ai_docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Pylon",
+    "module": "pylon",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 11a7a8870 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11a7a8870 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.usepylon.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "RepairToolArguments",
+    "module": "repair_tool_arguments",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "RuntimeAuthoring",
+    "module": "runtime_authoring",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Shell",
+    "module": "shell",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Skills",
+    "module": "skills",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Slack",
+    "module": "slack",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 11ab95630 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11ab95630 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.slack.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "SpritesSandbox",
+    "module": "sprites_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "SSHWorkspace",
+    "module": "ssh_workspace",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "StackOne",
+    "module": "stackone",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 11c2b8b90 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11c2b8b90 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.stackone.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents",
+    "module": "subagents",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
+    "output": null,
+    "reference": "done",
+    "error": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents[documented]",
+    "module": "subagents",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "TrajectoryJudge",
+    "module": "trajectory_judge",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside durable execution. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside durable execution. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "YouSearch",
+    "module": "youdotcom",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "YouResearch",
+    "module": "youdotcom",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "AskUser[id]",
+    "module": "ask_user",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CapabilityCreation[id]",
+    "module": "capability_creation",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PyaiDocs[id]",
+    "module": "docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "LocalStack[id]",
+    "module": "localstack",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Macroscope[id]",
+    "module": "macroscope",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PydanticAIDocs[id]",
+    "module": "pydantic_ai_docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "RuntimeAuthoring[id]",
+    "module": "runtime_authoring",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  }
+]

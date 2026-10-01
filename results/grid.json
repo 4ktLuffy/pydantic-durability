@@ -1,0 +1,1838 @@
+[
+  {
+    "case": "Control[unprotected]",
+    "module": "controls",
+    "mode": "default",
+    "verdict": "SANDBOX",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access __builtins__.open from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflow, mark the import as pas",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access __builtins__.open from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflow, mark the import as pas",
+    "events": [],
+    "event_count": 0,
+    "seconds": 1.6
+  },
+  {
+    "case": "Control[unprotected]",
+    "module": "controls",
+    "mode": "passthrough",
+    "verdict": "SANDBOX",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access __builtins__.open from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflow, mark the import as pas",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access __builtins__.open from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflow, mark the import as pas",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "Control[durable_operation]",
+    "module": "controls",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Control[durable_operation]",
+    "module": "controls",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Advisor",
+    "module": "advisor",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Advisor",
+    "module": "advisor",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "AskUser",
+    "module": "ask_user",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "AskUser",
+    "module": "ask_user",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "BackgroundTools",
+    "module": "background_tools",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "BackgroundTools",
+    "module": "background_tools",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "BubblewrapSandbox",
+    "module": "bubblewrap_sandbox",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.3
+  },
+  {
+    "case": "BubblewrapSandbox",
+    "module": "bubblewrap_sandbox",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.3
+  },
+  {
+    "case": "WarnOnCacheBusts",
+    "module": "cache_stability",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "WarnOnCacheBusts",
+    "module": "cache_stability",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "CacheStabilityMonitor",
+    "module": "cache_stability",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "CacheStabilityMonitor",
+    "module": "cache_stability",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "CapabilityCreation",
+    "module": "capability_creation",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "CapabilityCreation",
+    "module": "capability_creation",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "CodeMode",
+    "module": "code_mode",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "CodeMode",
+    "module": "code_mode",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Coder",
+    "module": "coder",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "Coder",
+    "module": "coder",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "RepoContext",
+    "module": "repo_context",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "RepoContext",
+    "module": "repo_context",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "ConversationSearch",
+    "module": "conversation_search",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "ConversationSearch",
+    "module": "conversation_search",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "DayAI",
+    "module": "day_ai",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs day.ai: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 119b12f30 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "day.ai"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "DayAI",
+    "module": "day_ai",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs day.ai: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 119b9c0f0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "day.ai"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "PyaiDocs",
+    "module": "docs",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PyaiDocs",
+    "module": "docs",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "DynamicWorkflow",
+    "module": "dynamic_workflow",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "DynamicWorkflow",
+    "module": "dynamic_workflow",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "E2BSandbox",
+    "module": "e2b_sandbox",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "E2BSandbox",
+    "module": "e2b_sandbox",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaSearch",
+    "module": "exa",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "ExaSearch",
+    "module": "exa",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "ExaAgent",
+    "module": "exa",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "ExaAgent",
+    "module": "exa",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "FileSystem",
+    "module": "filesystem",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "FileSystem",
+    "module": "filesystem",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "GitHub",
+    "module": "github",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.githubcopilot.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cc6b4d0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.githubcopilot.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "GitHub",
+    "module": "github",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.githubcopilot.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cb41e50 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.githubcopilot.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Grain",
+    "module": "grain",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.grain.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cd8c910 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.grain.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Grain",
+    "module": "grain",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.grain.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11ce0cb90 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.grain.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "ToolGuardrail",
+    "module": "guardrails",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "ToolGuardrail",
+    "module": "guardrails",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "InputGuardrail",
+    "module": "guardrails",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "InputGuardrail",
+    "module": "guardrails",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "OutputGuardrail",
+    "module": "guardrails",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "OutputGuardrail",
+    "module": "guardrails",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "Linear",
+    "module": "linear",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.linear.app: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cd8fbb0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.linear.app"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Linear",
+    "module": "linear",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.linear.app: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cb416d0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.linear.app"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "LocalStack",
+    "module": "localstack",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "LocalStack",
+    "module": "localstack",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "ManagedPrompt",
+    "module": "logfire",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "ManagedPrompt",
+    "module": "logfire",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "LogfireMCP",
+    "module": "logfire_mcp",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs logfire-us.pydantic.dev: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11ce80eb0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "logfire-us.pydantic.dev"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "LogfireMCP",
+    "module": "logfire_mcp",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs logfire-us.pydantic.dev: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11d124730 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "logfire-us.pydantic.dev"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Macroscope",
+    "module": "macroscope",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Macroscope",
+    "module": "macroscope",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "ModalSandbox",
+    "module": "modal_sandbox",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "ModalSandbox",
+    "module": "modal_sandbox",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "Notion",
+    "module": "notion",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.notion.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da28a50 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.notion.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Notion",
+    "module": "notion",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.notion.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da2b070 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.notion.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Ordinal",
+    "module": "ordinal",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs app.tryordinal.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11dafcb90 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "app.tryordinal.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Ordinal",
+    "module": "ordinal",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs app.tryordinal.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11db8e0d0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "app.tryordinal.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "OverflowingToolOutput",
+    "module": "overflowing_tool_output",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.3
+  },
+  {
+    "case": "OverflowingToolOutput",
+    "module": "overflowing_tool_output",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.3
+  },
+  {
+    "case": "PlaywrightBrowser",
+    "module": "playwright",
+    "mode": "default",
+    "verdict": "REFUSED",
+    "reason": "construct: UserError: PlaywrightBrowser does not support durable execution (e.g. TemporalDurability): a live Chromium browser cannot survive activity replay or worker restart. Run the browser agent outside the durable agent, or remove the durability capability.",
+    "events": []
+  },
+  {
+    "case": "PlaywrightBrowser",
+    "module": "playwright",
+    "mode": "passthrough",
+    "verdict": "REFUSED",
+    "reason": "construct: UserError: PlaywrightBrowser does not support durable execution (e.g. TemporalDurability): a live Chromium browser cannot survive activity replay or worker restart. Run the browser agent outside the durable agent, or remove the durability capability.",
+    "events": []
+  },
+  {
+    "case": "PostHog",
+    "module": "posthog",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.posthog.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da65d10 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.posthog.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "PostHog",
+    "module": "posthog",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.posthog.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11dd3b110 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.posthog.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "PromptInjectionDefender",
+    "module": "prompt_injection_defender",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "PromptInjectionDefender",
+    "module": "prompt_injection_defender",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "PydanticAIDocs",
+    "module": "pydantic_ai_docs",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PydanticAIDocs",
+    "module": "pydantic_ai_docs",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Pylon",
+    "module": "pylon",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.usepylon.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da65d10 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.usepylon.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Pylon",
+    "module": "pylon",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.usepylon.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11e0c22b0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.usepylon.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "RepairToolArguments",
+    "module": "repair_tool_arguments",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "RepairToolArguments",
+    "module": "repair_tool_arguments",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "RuntimeAuthoring",
+    "module": "runtime_authoring",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "RuntimeAuthoring",
+    "module": "runtime_authoring",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Shell",
+    "module": "shell",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "Shell",
+    "module": "shell",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "Skills",
+    "module": "skills",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "Skills",
+    "module": "skills",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "Slack",
+    "module": "slack",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.slack.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11e670910 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.slack.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "Slack",
+    "module": "slack",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.slack.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cc689b0 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "mcp.slack.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "SpritesSandbox",
+    "module": "sprites_sandbox",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "SpritesSandbox",
+    "module": "sprites_sandbox",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`.",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`.",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "SSHWorkspace",
+    "module": "ssh_workspace",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "SSHWorkspace",
+    "module": "ssh_workspace",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "StackOne",
+    "module": "stackone",
+    "mode": "default",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.stackone.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11fd96350 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.stackone.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "StackOne",
+    "module": "stackone",
+    "mode": "passthrough",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.stackone.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
+    "output": null,
+    "reference": null,
+    "reference_error": "CancelledError: Cancelled via cancel scope 11fddfc50 <- WouldBlock: ",
+    "workspace": false,
+    "tools_called": [],
+    "blocked_hosts": [
+      "api.stackone.com"
+    ],
+    "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.1
+  },
+  {
+    "case": "SubAgents",
+    "module": "subagents",
+    "mode": "default",
+    "verdict": "REFUSED",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: DynamicToolset cannot be added at runtime with Temporal, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to ",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: DynamicToolset cannot be added at runtime with Temporal, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to ",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents",
+    "module": "subagents",
+    "mode": "passthrough",
+    "verdict": "REFUSED",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: DynamicToolset cannot be added at runtime with Temporal, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to ",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: DynamicToolset cannot be added at runtime with Temporal, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to ",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents[documented]",
+    "module": "subagents",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "SubAgents[documented]",
+    "module": "subagents",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.2
+  },
+  {
+    "case": "TrajectoryJudge",
+    "module": "trajectory_judge",
+    "mode": "default",
+    "verdict": "REFUSED",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside d",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside d",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "TrajectoryJudge",
+    "module": "trajectory_judge",
+    "mode": "passthrough",
+    "verdict": "REFUSED",
+    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside d",
+    "output": null,
+    "reference": "done",
+    "reference_error": null,
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "blocked_hosts": [],
+    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside d",
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.0
+  },
+  {
+    "case": "YouSearch",
+    "module": "youdotcom",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "YouSearch",
+    "module": "youdotcom",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "YouResearch",
+    "module": "youdotcom",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "YouResearch",
+    "module": "youdotcom",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "AskUser[id]",
+    "module": "ask_user",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "AskUser[id]",
+    "module": "ask_user",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "CapabilityCreation[id]",
+    "module": "capability_creation",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "CapabilityCreation[id]",
+    "module": "capability_creation",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PyaiDocs[id]",
+    "module": "docs",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PyaiDocs[id]",
+    "module": "docs",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "LocalStack[id]",
+    "module": "localstack",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "LocalStack[id]",
+    "module": "localstack",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Macroscope[id]",
+    "module": "macroscope",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "Macroscope[id]",
+    "module": "macroscope",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PydanticAIDocs[id]",
+    "module": "pydantic_ai_docs",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "PydanticAIDocs[id]",
+    "module": "pydantic_ai_docs",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "RuntimeAuthoring[id]",
+    "module": "runtime_authoring",
+    "mode": "default",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  },
+  {
+    "case": "RuntimeAuthoring[id]",
+    "module": "runtime_authoring",
+    "mode": "passthrough",
+    "verdict": "NO_ID",
+    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
+    "events": []
+  }
+]

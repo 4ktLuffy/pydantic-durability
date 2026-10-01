@@ -1,0 +1,48 @@
+[
+  {
+    "case": "Control[unprotected]",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 3,
+    "ledger_lines_first_run": 2,
+    "ledger_lines_on_recovery": 2,
+    "writes_first_run": 2,
+    "writes_on_recovery": 2,
+    "recovery_write_targets": [
+      "('results/scratch/control-ledger.txt'"
+    ]
+  },
+  {
+    "case": "Control[durable_operation]",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 5,
+    "ledger_lines_first_run": 2,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 0,
+    "writes_on_recovery": 0,
+    "recovery_write_targets": []
+  },
+  {
+    "case": "CapabilityCreation",
+    "outputs": [
+      "done",
+      "done"
+    ],
+    "recorded_steps": 6,
+    "ledger_lines_first_run": 0,
+    "ledger_lines_on_recovery": 0,
+    "writes_first_run": 5,
+    "writes_on_recovery": 5,
+    "recovery_write_targets": [
+      "('results/scratch/capability_creation/manifest.p2v2i3jd.json.tmp'",
+      "('results/scratch/capability_creation/manifest.p3_pwn70.json.tmp'",
+      "('results/scratch/capability_creation/ok.py'",
+      "(10"
+    ]
+  }
+]

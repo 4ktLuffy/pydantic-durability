@@ -1,0 +1,8 @@
+# Upstream pydantic-ai checkout, studied and tested against; has its own history.
+upstream/
+__pycache__/
+.pytest_cache/
+results/scratch/
+results/*.log
+results/*.partial.json
+drafts/

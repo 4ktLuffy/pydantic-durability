@@ -1,0 +1,1492 @@
+[
+  {
+    "case": "Control[unprotected]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side open at controls.py:29 in after_model_request",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "controls.py:29 in after_model_request"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "controls.py:29 in after_model_request"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Control[durable_operation]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Advisor",
+    "module": "advisor",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "advisor"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "AskUser",
+    "module": "ask_user",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "ask_user_question"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "BackgroundTools",
+    "module": "background_tools",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "BubblewrapSandbox",
+    "module": "bubblewrap_sandbox",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "run_command",
+      "start_command",
+      "check_command",
+      "stop_command"
+    ],
+    "seconds": 0.3
+  },
+  {
+    "case": "WarnOnCacheBusts",
+    "module": "cache_stability",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CacheStabilityMonitor",
+    "module": "cache_stability",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CapabilityCreation",
+    "module": "capability_creation",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side os.mkdir at pydantic_ai_harness/capability_creation/_store.py:100 in write",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:100 in write"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/ok.py', 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:102 in write"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/manifest.f9hduvp7.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(10, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/capability_creation/manifest.f9hduvp7.json.tmp', '~/AI Engineering/pydantic-dur",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/manifest.uzid6yxv.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(10, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/capability_creation/manifest.uzid6yxv.json.tmp', '~/AI Engineering/pydantic-dur",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      }
+    ],
+    "event_count": 10,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "author_capability",
+      "list_authored_capabilities",
+      "disable_authored_capability"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CodeMode",
+    "module": "code_mode",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "run_code"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Coder",
+    "module": "coder",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "read_file",
+      "write_file",
+      "edit_file",
+      "list_files",
+      "grep",
+      "shell",
+      "delegate_task"
+    ],
+    "seconds": 0.8
+  },
+  {
+    "case": "RepoContext",
+    "module": "repo_context",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "inventory_agent_context"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ConversationSearch",
+    "module": "conversation_search",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "search_conversation_history"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "DayAI",
+    "module": "day_ai",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 1117399f0 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 1117399f0 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "day.ai"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "PyaiDocs",
+    "module": "docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "read_pyai_docs"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "DynamicWorkflow",
+    "module": "dynamic_workflow",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "run_workflow"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "E2BSandbox",
+    "module": "e2b_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaSearch",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side loop.getaddrinfo at pydantic_ai_harness/exa/_toolset.py:191 in web_search",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.exa.ai'",
+        "where": "pydantic_ai_harness/exa/_toolset.py:191 in web_search"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.exa.ai'",
+        "where": "pydantic_ai_harness/exa/_toolset.py:234 in get_page"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [
+      "api.exa.ai"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "web_search",
+      "get_page"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaAgent",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side loop.getaddrinfo at pydantic_ai_harness/exa/_agent.py:176 in exa_agent",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.exa.ai'",
+        "where": "pydantic_ai_harness/exa/_agent.py:176 in exa_agent"
+      }
+    ],
+    "event_count": 1,
+    "blocked_hosts": [
+      "api.exa.ai"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "exa_agent"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "FileSystem",
+    "module": "filesystem",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "read_file",
+      "write_file",
+      "edit_file",
+      "list_directory",
+      "search_files",
+      "find_files",
+      "create_directory",
+      "file_info"
+    ],
+    "seconds": 0.2
+  },
+  {
+    "case": "GitHub",
+    "module": "github",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 119e8cc30 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119e8cc30 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.githubcopilot.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Grain",
+    "module": "grain",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 119e8e990 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119e8e990 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.grain.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "ToolGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "InputGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "OutputGuardrail",
+    "module": "guardrails",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Linear",
+    "module": "linear",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 119db1950 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119db1950 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.linear.app"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "LocalStack",
+    "module": "localstack",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side open at pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "open",
+        "detail": "('<tmp>/', 'w+', 16778754)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/harness_aws_out_7nhidya6', None, 16780034)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/', 'w+', 16778754)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/harness_aws_err_2rvq6xlm', None, 16780034)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:301 in _run"
+      },
+      {
+        "event": "subprocess.Popen",
+        "detail": "('aws', ['aws', '--endpoint-url', 'http://localhost.localstack.cloud:4566', '--region', 'us-east-1', 'ok'], None, {'OSLogRateLimit': '64', 'MallocNanoZone': '0'",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:301 in _run"
+      },
+      {
+        "event": "os.remove",
+        "detail": "('<tmp>/harness_aws_out_7nhidya6', -1)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:341 in _run"
+      },
+      {
+        "event": "os.remove",
+        "detail": "('<tmp>/harness_aws_err_2rvq6xlm', -1)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:342 in _run"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'localhost.localstack.cloud'",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:356 in localstack_health"
+      }
+    ],
+    "event_count": 9,
+    "blocked_hosts": [
+      "localhost.localstack.cloud"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "aws_cli",
+      "localstack_health"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ManagedPrompt",
+    "module": "logfire",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "LogfireMCP",
+    "module": "logfire_mcp",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 119e8c2d0 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 119e8c2d0 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "logfire-us.pydantic.dev"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Macroscope",
+    "module": "macroscope",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: UserError: The `macroscope` CLI was not found on PATH in the workspace. Install it with: <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": null,
+    "error": "UserError: The `macroscope` CLI was not found on PATH in the workspace. Install it with: <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "ModalSandbox",
+    "module": "modal_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.2
+  },
+  {
+    "case": "Notion",
+    "module": "notion",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 11aa436b0 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11aa436b0 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.notion.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "Ordinal",
+    "module": "ordinal",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 11ac5d770 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11ac5d770 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "app.tryordinal.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "OverflowingToolOutput",
+    "module": "overflowing_tool_output",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "read_tool_result"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PlaywrightBrowser",
+    "module": "playwright",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "construct: UserError: PlaywrightBrowser does not support durable execution (e.g. TemporalDurability): a live Chromium browser cannot survive activity replay or worker restart. Run the browser agent outside the durable agent, or remove the durability capability.",
+    "events": []
+  },
+  {
+    "case": "PostHog",
+    "module": "posthog",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 11b28dc70 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11b28dc70 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.posthog.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "PromptInjectionDefender",
+    "module": "prompt_injection_defender",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PydanticAIDocs",
+    "module": "pydantic_ai_docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "read_pyai_docs"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Pylon",
+    "module": "pylon",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 11af4e3f0 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11af4e3f0 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.usepylon.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "RepairToolArguments",
+    "module": "repair_tool_arguments",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "delegate_task",
+      "read_tool_result"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "RuntimeAuthoring",
+    "module": "runtime_authoring",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side os.mkdir at pydantic_ai_harness/capability_creation/_store.py:100 in write",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:100 in write"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/ok.py', 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:102 in write"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/manifest.cbrfnvj8.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/runtime_authoring/manifest.cbrfnvj8.json.tmp', '~/AI Engineering/pydantic-durab",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/manifest.0kko7uog.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/runtime_authoring/manifest.0kko7uog.json.tmp', '~/AI Engineering/pydantic-durab",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      }
+    ],
+    "event_count": 10,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "author_capability",
+      "list_authored_capabilities",
+      "disable_authored_capability"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Shell",
+    "module": "shell",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "run_command",
+      "start_command",
+      "check_command",
+      "stop_command"
+    ],
+    "seconds": 0.3
+  },
+  {
+    "case": "Skills",
+    "module": "skills",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Slack",
+    "module": "slack",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 11b591310 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11b591310 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "mcp.slack.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "SpritesSandbox",
+    "module": "sprites_sandbox",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "SSHWorkspace",
+    "module": "ssh_workspace",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "StackOne",
+    "module": "stackone",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 11ccd2710 <- WouldBlock: ",
+    "output": null,
+    "reference": null,
+    "error": "CancelledError: Cancelled via cancel scope 11ccd2710 <- WouldBlock: ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.stackone.com"
+    ],
+    "workspace": false,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents",
+    "module": "subagents",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
+    "output": null,
+    "reference": "done",
+    "error": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "SubAgents[documented]",
+    "module": "subagents",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "delegate_task"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "TrajectoryJudge",
+    "module": "trajectory_judge",
+    "mode": "dbos",
+    "verdict": "REFUSED",
+    "reason": "UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside durable execution. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": "done",
+    "error": "UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside durable execution. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "YouSearch",
+    "module": "youdotcom",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side loop.getaddrinfo at pydantic_ai_harness/youdotcom/_toolset.py:329 in web_search",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'ydc-index.io'",
+        "where": "pydantic_ai_harness/youdotcom/_toolset.py:329 in web_search"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'ydc-index.io'",
+        "where": "pydantic_ai_harness/youdotcom/_toolset.py:379 in get_page"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [
+      "ydc-index.io"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "web_search",
+      "get_page"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "YouResearch",
+    "module": "youdotcom",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side loop.getaddrinfo at pydantic_ai_harness/youdotcom/_research.py:139 in answer",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.you.com'",
+        "where": "pydantic_ai_harness/youdotcom/_research.py:139 in answer"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.you.com'",
+        "where": "pydantic_ai_harness/youdotcom/_research.py:165 in research"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.you.com'",
+        "where": "pydantic_ai_harness/youdotcom/_research.py:191 in finance_research"
+      }
+    ],
+    "event_count": 3,
+    "blocked_hosts": [
+      "api.you.com"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "answer",
+      "research",
+      "finance_research"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "AskUser[id]",
+    "module": "ask_user",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "ask_user_question"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "CapabilityCreation[id]",
+    "module": "capability_creation",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side os.mkdir at pydantic_ai_harness/capability_creation/_store.py:100 in write",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:100 in write"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/ok.py', 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:102 in write"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/manifest.dd6_vxvc.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/capability_creation/manifest.dd6_vxvc.json.tmp', '~/AI Engineering/pydantic-dur",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/capability_creation', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/capability_creation/manifest.i6r4rc33.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/capability_creation/manifest.i6r4rc33.json.tmp', '~/AI Engineering/pydantic-dur",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      }
+    ],
+    "event_count": 10,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "author_capability",
+      "list_authored_capabilities",
+      "disable_authored_capability"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "PyaiDocs[id]",
+    "module": "docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "read_pyai_docs"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "LocalStack[id]",
+    "module": "localstack",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side open at pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "open",
+        "detail": "('<tmp>/', 'w+', 16778754)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/harness_aws_out_u3xu3exc', None, 16780034)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/', 'w+', 16778754)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "('<tmp>/harness_aws_err_g0faf2bn', None, 16780034)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
+      },
+      {
+        "event": "open",
+        "detail": "(25, 'w', 16778753)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:301 in _run"
+      },
+      {
+        "event": "subprocess.Popen",
+        "detail": "('aws', ['aws', '--endpoint-url', 'http://localhost.localstack.cloud:4566', '--region', 'us-east-1', 'ok'], None, {'OSLogRateLimit': '64', 'MallocNanoZone': '0'",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:301 in _run"
+      },
+      {
+        "event": "os.remove",
+        "detail": "('<tmp>/harness_aws_out_u3xu3exc', -1)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:341 in _run"
+      },
+      {
+        "event": "os.remove",
+        "detail": "('<tmp>/harness_aws_err_g0faf2bn', -1)",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:342 in _run"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'localhost.localstack.cloud'",
+        "where": "pydantic_ai_harness/localstack/_toolset.py:356 in localstack_health"
+      }
+    ],
+    "event_count": 9,
+    "blocked_hosts": [
+      "localhost.localstack.cloud"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "aws_cli",
+      "localstack_health"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "Macroscope[id]",
+    "module": "macroscope",
+    "mode": "dbos",
+    "verdict": "NOT_RUN",
+    "reason": "needs external service or credentials: UserError: The `macroscope` CLI was not found on PATH in the workspace. Install it with: <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "output": null,
+    "reference": null,
+    "error": "UserError: The `macroscope` CLI was not found on PATH in the workspace. Install it with: <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [],
+    "seconds": 0.0
+  },
+  {
+    "case": "PydanticAIDocs[id]",
+    "module": "pydantic_ai_docs",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "read_pyai_docs"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "RuntimeAuthoring[id]",
+    "module": "runtime_authoring",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side os.mkdir at pydantic_ai_harness/capability_creation/_store.py:100 in write",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:100 in write"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/ok.py', 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:102 in write"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/manifest.t__b2w4q.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/runtime_authoring/manifest.t__b2w4q.json.tmp', '~/AI Engineering/pydantic-durab",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      },
+      {
+        "event": "os.mkdir",
+        "detail": "('results/scratch/runtime_authoring', 511, -1)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:65 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/runtime_authoring/manifest.cn73wdok.json.tmp', None, 16780034)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
+      },
+      {
+        "event": "open",
+        "detail": "(22, 'w', 16778753)",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:71 in _save_manifest"
+      },
+      {
+        "event": "os.rename",
+        "detail": "('results/scratch/runtime_authoring/manifest.cn73wdok.json.tmp', '~/AI Engineering/pydantic-durab",
+        "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
+      }
+    ],
+    "event_count": 10,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "author_capability",
+      "list_authored_capabilities",
+      "disable_authored_capability"
+    ],
+    "seconds": 0.0
+  }
+]
