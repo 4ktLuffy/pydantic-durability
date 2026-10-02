@@ -16,7 +16,7 @@
     "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access __builtins__.open from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflow, mark the import as pas",
     "events": [],
     "event_count": 0,
-    "seconds": 1.5
+    "seconds": 1.6
   },
   {
     "case": "Control[unprotected]",
@@ -453,7 +453,7 @@
     "reason": "offline: needs day.ai: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 117df39d0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 119b12f30 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -472,7 +472,7 @@
     "reason": "offline: needs day.ai: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: day.ai <- ApplicationError: ConnectError: grid blocks external network: day.ai",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 118687bb0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 119b9c0f0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -653,7 +653,7 @@
     "reason": "offline: needs api.githubcopilot.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11ad958b0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cc6b4d0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -662,7 +662,7 @@
     "error": "ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
     "events": [],
     "event_count": 0,
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "GitHub",
@@ -672,7 +672,7 @@
     "reason": "offline: needs api.githubcopilot.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.githubcopilot.com <- ApplicationError: ConnectError: grid blocks external network: api.githubcopilot.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11aee5630 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cb41e50 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -691,7 +691,7 @@
     "reason": "offline: needs api.grain.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11af4a530 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cd8c910 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -710,7 +710,7 @@
     "reason": "offline: needs api.grain.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.grain.com <- ApplicationError: ConnectError: grid blocks external network: api.grain.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11afcf930 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11ce0cb90 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -843,7 +843,7 @@
     "reason": "offline: needs mcp.linear.app: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11afcd090 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cd8fbb0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -862,7 +862,7 @@
     "reason": "offline: needs mcp.linear.app: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.linear.app <- ApplicationError: ConnectError: grid blocks external network: mcp.linear.app",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11aee4730 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cb416d0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -935,7 +935,7 @@
     "reason": "offline: needs logfire-us.pydantic.dev: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11ac47d90 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11ce80eb0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -954,7 +954,7 @@
     "reason": "offline: needs logfire-us.pydantic.dev: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: logfire-us.pydantic.dev <- ApplicationError: ConnectError: grid blocks external network: logfire-us.pydantic.dev",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11afcc910 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11d124730 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -998,7 +998,7 @@
     "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`.",
     "events": [],
     "event_count": 0,
-    "seconds": 0.3
+    "seconds": 0.2
   },
   {
     "case": "ModalSandbox",
@@ -1027,7 +1027,7 @@
     "reason": "offline: needs mcp.notion.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bc28ff0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da28a50 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1046,7 +1046,7 @@
     "reason": "offline: needs mcp.notion.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.notion.com <- ApplicationError: ConnectError: grid blocks external network: mcp.notion.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bc2ab70 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da2b070 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1065,7 +1065,7 @@
     "reason": "offline: needs app.tryordinal.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bbbe5d0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11dafcb90 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1084,7 +1084,7 @@
     "reason": "offline: needs app.tryordinal.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: app.tryordinal.com <- ApplicationError: ConnectError: grid blocks external network: app.tryordinal.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bc27070 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11db8e0d0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1112,7 +1112,7 @@
     "error": null,
     "events": [],
     "event_count": 0,
-    "seconds": 0.2
+    "seconds": 0.3
   },
   {
     "case": "OverflowingToolOutput",
@@ -1157,7 +1157,7 @@
     "reason": "offline: needs mcp.posthog.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bbbe0d0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da65d10 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1176,7 +1176,7 @@
     "reason": "offline: needs mcp.posthog.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.posthog.com <- ApplicationError: ConnectError: grid blocks external network: mcp.posthog.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11be31b30 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11dd3b110 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1249,7 +1249,7 @@
     "reason": "offline: needs mcp.usepylon.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11c068410 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11da65d10 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1268,7 +1268,7 @@
     "reason": "offline: needs mcp.usepylon.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.usepylon.com <- ApplicationError: ConnectError: grid blocks external network: mcp.usepylon.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11c260230 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11e0c22b0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1385,7 +1385,7 @@
     "error": null,
     "events": [],
     "event_count": 0,
-    "seconds": 0.3
+    "seconds": 0.2
   },
   {
     "case": "Skills",
@@ -1433,7 +1433,7 @@
     "reason": "offline: needs mcp.slack.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11ab27bb0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11e670910 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1452,7 +1452,7 @@
     "reason": "offline: needs mcp.slack.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: mcp.slack.com <- ApplicationError: ConnectError: grid blocks external network: mcp.slack.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11bc2b930 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11cc689b0 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1547,7 +1547,7 @@
     "reason": "offline: needs api.stackone.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11de4dd10 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11fd96350 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1566,7 +1566,7 @@
     "reason": "offline: needs api.stackone.com: ApplicationError: RuntimeError: Client failed to connect: grid blocks external network: api.stackone.com <- ApplicationError: ConnectError: grid blocks external network: api.stackone.com",
     "output": null,
     "reference": null,
-    "reference_error": "CancelledError: Cancelled via cancel scope 11de4f2f0 <- WouldBlock: ",
+    "reference_error": "CancelledError: Cancelled via cancel scope 11fddfc50 <- WouldBlock: ",
     "workspace": false,
     "tools_called": [],
     "blocked_hosts": [
@@ -1722,44 +1722,6 @@
     "verdict": "NO_ID",
     "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Temporal. The ID will be used to identify the toolset's activities within the workflow. Set it on the toolset itself with `FunctionTools",
     "events": []
-  },
-  {
-    "case": "ExaSearch[dynamic]",
-    "module": "exa",
-    "mode": "default",
-    "verdict": "SANDBOX",
-    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access http.client.IncompleteRead.__mro_entries__ from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflo",
-    "output": null,
-    "reference": "done",
-    "reference_error": null,
-    "workspace": false,
-    "tools_called": [
-      "ping"
-    ],
-    "blocked_hosts": [],
-    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access http.client.IncompleteRead.__mro_entries__ from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflo",
-    "events": [],
-    "event_count": 0,
-    "seconds": 0.1
-  },
-  {
-    "case": "ExaSearch[dynamic]",
-    "module": "exa",
-    "mode": "passthrough",
-    "verdict": "SANDBOX",
-    "reason": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access http.client.IncompleteRead.__mro_entries__ from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflo",
-    "output": null,
-    "reference": "done",
-    "reference_error": null,
-    "workspace": false,
-    "tools_called": [
-      "ping"
-    ],
-    "blocked_hosts": [],
-    "error": "WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access http.client.IncompleteRead.__mro_entries__ from inside a workflow. If this is code from a module not used in a workflow or known to only be used deterministically from a workflo",
-    "events": [],
-    "event_count": 0,
-    "seconds": 0.1
   },
   {
     "case": "AskUser[id]",

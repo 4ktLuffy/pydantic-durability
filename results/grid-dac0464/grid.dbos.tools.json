@@ -82,7 +82,7 @@
       "ping",
       "ask_user_question"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "BackgroundTools",
@@ -187,7 +187,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/capability_creation/manifest.g1uhfd1d.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/capability_creation/manifest.f9hduvp7.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -197,7 +197,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/capability_creation/manifest.g1uhfd1d.json.tmp', '~/AI Engineering/pydantic-dur",
+        "detail": "('results/scratch/capability_creation/manifest.f9hduvp7.json.tmp', '~/AI Engineering/pydantic-dur",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       },
       {
@@ -207,7 +207,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/capability_creation/manifest.uuwdz081.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/capability_creation/manifest.uzid6yxv.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -217,7 +217,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/capability_creation/manifest.uuwdz081.json.tmp', '~/AI Engineering/pydantic-dur",
+        "detail": "('results/scratch/capability_creation/manifest.uzid6yxv.json.tmp', '~/AI Engineering/pydantic-dur",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       }
     ],
@@ -318,10 +318,10 @@
     "module": "day_ai",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 1122b2850 <- WouldBlock: ",
+    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 1117399f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 1122b2850 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1117399f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -478,10 +478,10 @@
     "module": "github",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 11aa73e30 <- WouldBlock: ",
+    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 119e8cc30 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11aa73e30 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119e8cc30 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -496,10 +496,10 @@
     "module": "grain",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 11abac550 <- WouldBlock: ",
+    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 119e8e990 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11abac550 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119e8e990 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -568,10 +568,10 @@
     "module": "linear",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 11abaf390 <- WouldBlock: ",
+    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 119db1950 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11abaf390 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119db1950 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -598,7 +598,7 @@
       },
       {
         "event": "open",
-        "detail": "('<tmp>/harness_aws_out_xa9urfvz', None, 16780034)",
+        "detail": "('<tmp>/harness_aws_out_7nhidya6', None, 16780034)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
       },
       {
@@ -608,7 +608,7 @@
       },
       {
         "event": "open",
-        "detail": "('<tmp>/harness_aws_err_lcjara57', None, 16780034)",
+        "detail": "('<tmp>/harness_aws_err_2rvq6xlm', None, 16780034)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
       },
       {
@@ -623,12 +623,12 @@
       },
       {
         "event": "os.remove",
-        "detail": "('<tmp>/harness_aws_out_xa9urfvz', -1)",
+        "detail": "('<tmp>/harness_aws_out_7nhidya6', -1)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:341 in _run"
       },
       {
         "event": "os.remove",
-        "detail": "('<tmp>/harness_aws_err_lcjara57', -1)",
+        "detail": "('<tmp>/harness_aws_err_2rvq6xlm', -1)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:342 in _run"
       },
       {
@@ -672,10 +672,10 @@
     "module": "logfire_mcp",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 11acca3f0 <- WouldBlock: ",
+    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 119e8c2d0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11acca3f0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119e8c2d0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -683,7 +683,7 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Macroscope",
@@ -724,10 +724,10 @@
     "module": "notion",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 11b9ab1b0 <- WouldBlock: ",
+    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 11aa436b0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11b9ab1b0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11aa436b0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -742,10 +742,10 @@
     "module": "ordinal",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 11b7494f0 <- WouldBlock: ",
+    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 11ac5d770 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11b7494f0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11ac5d770 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -787,10 +787,10 @@
     "module": "posthog",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 11bc558b0 <- WouldBlock: ",
+    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 11b28dc70 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11bc558b0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11b28dc70 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -842,10 +842,10 @@
     "module": "pylon",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 11bc9a2b0 <- WouldBlock: ",
+    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 11af4e3f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11bc9a2b0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11af4e3f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -920,7 +920,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/runtime_authoring/manifest.wjugvx2u.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/runtime_authoring/manifest.cbrfnvj8.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -930,7 +930,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/runtime_authoring/manifest.wjugvx2u.json.tmp', '~/AI Engineering/pydantic-durab",
+        "detail": "('results/scratch/runtime_authoring/manifest.cbrfnvj8.json.tmp', '~/AI Engineering/pydantic-durab",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       },
       {
@@ -940,7 +940,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/runtime_authoring/manifest._awdjjui.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/runtime_authoring/manifest.0kko7uog.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -950,7 +950,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/runtime_authoring/manifest._awdjjui.json.tmp', '~/AI Engineering/pydantic-durab",
+        "detail": "('results/scratch/runtime_authoring/manifest.0kko7uog.json.tmp', '~/AI Engineering/pydantic-durab",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       }
     ],
@@ -1010,10 +1010,10 @@
     "module": "slack",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 11c27a210 <- WouldBlock: ",
+    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 11b591310 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11c27a210 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11b591310 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -1064,10 +1064,10 @@
     "module": "stackone",
     "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 11d9da670 <- WouldBlock: ",
+    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 11ccd2710 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 11d9da670 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11ccd2710 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -1205,28 +1205,6 @@
     "seconds": 0.0
   },
   {
-    "case": "ExaSearch[dynamic]",
-    "module": "exa",
-    "mode": "dbos",
-    "verdict": "SAFE",
-    "reason": "",
-    "output": "done",
-    "reference": "done",
-    "error": null,
-    "events": [],
-    "event_count": 0,
-    "blocked_hosts": [
-      "api.exa.ai"
-    ],
-    "workspace": false,
-    "tools_called": [
-      "ping",
-      "web_search",
-      "get_page"
-    ],
-    "seconds": 0.0
-  },
-  {
     "case": "AskUser[id]",
     "module": "ask_user",
     "mode": "dbos",
@@ -1272,7 +1250,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/capability_creation/manifest.7577odck.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/capability_creation/manifest.dd6_vxvc.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -1282,7 +1260,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/capability_creation/manifest.7577odck.json.tmp', '~/AI Engineering/pydantic-dur",
+        "detail": "('results/scratch/capability_creation/manifest.dd6_vxvc.json.tmp', '~/AI Engineering/pydantic-dur",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       },
       {
@@ -1292,7 +1270,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/capability_creation/manifest.6iytht5q.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/capability_creation/manifest.i6r4rc33.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -1302,7 +1280,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/capability_creation/manifest.6iytht5q.json.tmp', '~/AI Engineering/pydantic-dur",
+        "detail": "('results/scratch/capability_creation/manifest.i6r4rc33.json.tmp', '~/AI Engineering/pydantic-dur",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       }
     ],
@@ -1353,7 +1331,7 @@
       },
       {
         "event": "open",
-        "detail": "('<tmp>/harness_aws_out_oiccp2aj', None, 16780034)",
+        "detail": "('<tmp>/harness_aws_out_u3xu3exc', None, 16780034)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:297 in _run"
       },
       {
@@ -1363,7 +1341,7 @@
       },
       {
         "event": "open",
-        "detail": "('<tmp>/harness_aws_err_njjinkyi', None, 16780034)",
+        "detail": "('<tmp>/harness_aws_err_g0faf2bn', None, 16780034)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:298 in _run"
       },
       {
@@ -1378,12 +1356,12 @@
       },
       {
         "event": "os.remove",
-        "detail": "('<tmp>/harness_aws_out_oiccp2aj', -1)",
+        "detail": "('<tmp>/harness_aws_out_u3xu3exc', -1)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:341 in _run"
       },
       {
         "event": "os.remove",
-        "detail": "('<tmp>/harness_aws_err_njjinkyi', -1)",
+        "detail": "('<tmp>/harness_aws_err_g0faf2bn', -1)",
         "where": "pydantic_ai_harness/localstack/_toolset.py:342 in _run"
       },
       {
@@ -1466,7 +1444,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/runtime_authoring/manifest.0vugdam7.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/runtime_authoring/manifest.t__b2w4q.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -1476,7 +1454,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/runtime_authoring/manifest.0vugdam7.json.tmp', '~/AI Engineering/pydantic-durab",
+        "detail": "('results/scratch/runtime_authoring/manifest.t__b2w4q.json.tmp', '~/AI Engineering/pydantic-durab",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       },
       {
@@ -1486,7 +1464,7 @@
       },
       {
         "event": "open",
-        "detail": "('results/scratch/runtime_authoring/manifest.nnf3b20e.json.tmp', None, 16780034)",
+        "detail": "('results/scratch/runtime_authoring/manifest.cn73wdok.json.tmp', None, 16780034)",
         "where": "pydantic_ai_harness/capability_creation/_store.py:69 in _save_manifest"
       },
       {
@@ -1496,7 +1474,7 @@
       },
       {
         "event": "os.rename",
-        "detail": "('results/scratch/runtime_authoring/manifest.nnf3b20e.json.tmp', '~/AI Engineering/pydantic-durab",
+        "detail": "('results/scratch/runtime_authoring/manifest.cn73wdok.json.tmp', '~/AI Engineering/pydantic-durab",
         "where": "pydantic_ai_harness/capability_creation/_store.py:73 in _save_manifest"
       }
     ],

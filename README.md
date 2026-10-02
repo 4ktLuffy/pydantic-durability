@@ -13,6 +13,12 @@ SAFE before any other cell is reported.
 - **Results and findings:** [FINDINGS.md](FINDINGS.md), full table in [results/GRID.md](results/GRID.md)
 - **Recovery, demonstrated:** [suite/dbos_recovery.py](suite/dbos_recovery.py) runs a DBOS workflow,
   forks it after its last recorded step, and counts the writes that run again
+- **Minimal reproduction for pydantic/pydantic-ai#9554:** [repro/dbos_capability_creation_recovery.py](repro/dbos_capability_creation_recovery.py),
+  one file, no network: `CapabilityCreation` writes once on the first run and once more on
+  recovery; with `--dynamic` (inside `DynamicCapability`) it writes 0 times on recovery
+- **What changed between two commits:** [suite/diff_grids.py](suite/diff_grids.py). The grid in
+  `results/` is from main at e4e0da0; `results/grid-dac0464/` is the earlier run on dac0464.
+  Between them, 0 of 360 verdicts changed
 
 ## Running it
 

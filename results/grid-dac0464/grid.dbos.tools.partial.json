@@ -1,0 +1,57 @@
+[
+  {
+    "case": "ExaSearch",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side loop.getaddrinfo at pydantic_ai_harness/exa/_toolset.py:191 in web_search",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.exa.ai'",
+        "where": "pydantic_ai_harness/exa/_toolset.py:191 in web_search"
+      },
+      {
+        "event": "loop.getaddrinfo",
+        "detail": "'api.exa.ai'",
+        "where": "pydantic_ai_harness/exa/_toolset.py:234 in get_page"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [
+      "api.exa.ai"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "web_search",
+      "get_page"
+    ],
+    "seconds": 0.0
+  },
+  {
+    "case": "ExaSearch[dynamic]",
+    "module": "exa",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [
+      "api.exa.ai"
+    ],
+    "workspace": false,
+    "tools_called": [
+      "ping",
+      "web_search",
+      "get_page"
+    ],
+    "seconds": 0.0
+  }
+]

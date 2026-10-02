@@ -117,8 +117,8 @@
     "writes_first_run": 11,
     "writes_on_recovery": 9,
     "first_run_effects": [
-      "open ('<tmp>/o5aedavq' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
-      "os.remove ('<tmp>/o5aedavq' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "open ('<tmp>/5_df_pef' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
+      "os.remove ('<tmp>/5_df_pef' @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
       "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
       "open ('<tmp>/harness_a @ pydantic_ai_harness/localstack/_toolset.py:297 in _run",
       "open ('<tmp>/', 'w+', 1 @ pydantic_ai_harness/localstack/_toolset.py:298 in _run",

@@ -2,7 +2,7 @@
   {
     "case": "Control[unprotected]",
     "module": "controls",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "BROKEN",
     "reason": "workflow-side open at controls.py:29 in after_model_request",
     "output": "done",
@@ -26,12 +26,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.2
+    "seconds": 0.0
   },
   {
     "case": "Control[durable_operation]",
     "module": "controls",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -44,12 +44,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Advisor",
     "module": "advisor",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -62,20 +62,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "AskUser",
     "module": "ask_user",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
-  },
-  {
-    "case": "BackgroundTools",
-    "module": "background_tools",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -88,12 +80,30 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
+  },
+  {
+    "case": "BackgroundTools",
+    "module": "background_tools",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "BubblewrapSandbox",
     "module": "bubblewrap_sandbox",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -106,12 +116,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "WarnOnCacheBusts",
     "module": "cache_stability",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -124,12 +134,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "CacheStabilityMonitor",
     "module": "cache_stability",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -142,20 +152,30 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "CapabilityCreation",
     "module": "capability_creation",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "CodeMode",
     "module": "code_mode",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -171,7 +191,7 @@
   {
     "case": "Coder",
     "module": "coder",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -184,12 +204,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "RepoContext",
     "module": "repo_context",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -202,12 +222,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "ConversationSearch",
     "module": "conversation_search",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -220,17 +240,17 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "DayAI",
     "module": "day_ai",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 12455b430 <- WouldBlock: ",
+    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 115dc0d70 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12455b430 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 115dc0d70 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -238,20 +258,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "PyaiDocs",
     "module": "docs",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
-  },
-  {
-    "case": "DynamicWorkflow",
-    "module": "dynamic_workflow",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -264,12 +276,30 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
+  },
+  {
+    "case": "DynamicWorkflow",
+    "module": "dynamic_workflow",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "E2BSandbox",
     "module": "e2b_sandbox",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
     "reason": "needs external service or credentials: WorkspaceUnavailableError: No E2B API key found. Set E2B_API_KEY in the environment. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
     "output": null,
@@ -282,28 +312,48 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "ExaSearch",
     "module": "exa",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "ExaAgent",
     "module": "exa",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "FileSystem",
     "module": "filesystem",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -316,17 +366,17 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "GitHub",
     "module": "github",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 127902c10 <- WouldBlock: ",
+    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 1193028f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127902c10 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1193028f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -334,17 +384,17 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Grain",
     "module": "grain",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 1279982d0 <- WouldBlock: ",
+    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 119440690 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 1279982d0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119440690 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -352,12 +402,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "ToolGuardrail",
     "module": "guardrails",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -370,12 +420,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "InputGuardrail",
     "module": "guardrails",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -388,12 +438,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "OutputGuardrail",
     "module": "guardrails",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -411,12 +461,12 @@
   {
     "case": "Linear",
     "module": "linear",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 127a2d630 <- WouldBlock: ",
+    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 119300690 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127a2d630 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 119300690 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -424,20 +474,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "LocalStack",
     "module": "localstack",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
-  },
-  {
-    "case": "ManagedPrompt",
-    "module": "logfire",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -450,17 +492,35 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
+  },
+  {
+    "case": "ManagedPrompt",
+    "module": "logfire",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "LogfireMCP",
     "module": "logfire_mcp",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 127b8a710 <- WouldBlock: ",
+    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 11981c230 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127b8a710 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11981c230 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -473,15 +533,25 @@
   {
     "case": "Macroscope",
     "module": "macroscope",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "ModalSandbox",
     "module": "modal_sandbox",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
     "reason": "needs external service or credentials: WorkspaceUnavailableError: No Modal credentials found. Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET or run `modal token new`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
     "output": null,
@@ -494,17 +564,17 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.2
+    "seconds": 0.3
   },
   {
     "case": "Notion",
     "module": "notion",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 128647610 <- WouldBlock: ",
+    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 11a2a2350 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 128647610 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11a2a2350 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -517,12 +587,12 @@
   {
     "case": "Ordinal",
     "module": "ordinal",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 12872d6d0 <- WouldBlock: ",
+    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 11a2a3a70 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12872d6d0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11a2a3a70 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -530,12 +600,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "OverflowingToolOutput",
     "module": "overflowing_tool_output",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -548,12 +618,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "PlaywrightBrowser",
     "module": "playwright",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "REFUSED",
     "reason": "construct: UserError: PlaywrightBrowser does not support durable execution (e.g. TemporalDurability): a live Chromium browser cannot survive activity replay or worker restart. Run the browser agent outside the durable agent, or remove the durability capability.",
     "events": []
@@ -561,12 +631,12 @@
   {
     "case": "PostHog",
     "module": "posthog",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 128d94730 <- WouldBlock: ",
+    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 11a9bb890 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 128d94730 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11a9bb890 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -574,12 +644,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "PromptInjectionDefender",
     "module": "prompt_injection_defender",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -592,25 +662,35 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "PydanticAIDocs",
     "module": "pydantic_ai_docs",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "Pylon",
     "module": "pylon",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 12799a030 <- WouldBlock: ",
+    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 11a7a8870 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12799a030 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11a7a8870 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -623,7 +703,7 @@
   {
     "case": "RepairToolArguments",
     "module": "repair_tool_arguments",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -636,28 +716,48 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Researcher",
     "module": "researcher",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "RuntimeAuthoring",
     "module": "runtime_authoring",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "Shell",
     "module": "shell",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -670,12 +770,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Skills",
     "module": "skills",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -688,17 +788,17 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Slack",
     "module": "slack",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 129115270 <- WouldBlock: ",
+    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 11ab95630 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 129115270 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11ab95630 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -706,12 +806,12 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 2.1
+    "seconds": 0.0
   },
   {
     "case": "SpritesSandbox",
     "module": "sprites_sandbox",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
     "reason": "needs external service or credentials: WorkspaceUnavailableError: No Sprites credentials found. Set SPRITE_TOKEN, or pass a configured `AsyncSpritesClient` as `client=`. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
     "output": null,
@@ -729,7 +829,7 @@
   {
     "case": "SSHWorkspace",
     "module": "ssh_workspace",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
     "reason": "needs external service or credentials: WorkspaceUnavailableError: SSH workspace grid@127.0.0.1 is unavailable: ssh: connect to host 127.0.0.1 port 22: Connection refused <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
     "output": null,
@@ -742,17 +842,17 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "StackOne",
     "module": "stackone",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 12907ab70 <- WouldBlock: ",
+    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 11c2b8b90 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12907ab70 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 11c2b8b90 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -760,17 +860,17 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "SubAgents",
     "module": "subagents",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "REFUSED",
-    "reason": "UserError: DynamicToolset cannot be added at runtime with Prefect, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent construct",
+    "reason": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
     "output": null,
     "reference": "done",
-    "error": "UserError: DynamicToolset cannot be added at runtime with Prefect, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent construct",
+    "error": "UserError: DynamicToolset cannot be added at runtime with DBOS, because toolsets that execute their own tools or resolve dynamically must be registered for durable execution when the agent is constructed. Pass them to the agent constructor ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [],
@@ -783,7 +883,7 @@
   {
     "case": "SubAgents[documented]",
     "module": "subagents",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -796,12 +896,12 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "TrajectoryJudge",
     "module": "trajectory_judge",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "REFUSED",
     "reason": "UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: the judge evaluation runs in orchestration context, so its model calls are not checkpointed and can repeat on replay. Run judged work outside durable execution. <- ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)",
     "output": null,
@@ -819,23 +919,7 @@
   {
     "case": "YouSearch",
     "module": "youdotcom",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
-  },
-  {
-    "case": "YouResearch",
-    "module": "youdotcom",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
-  },
-  {
-    "case": "ExaSearch[dynamic]",
-    "module": "exa",
-    "mode": "prefect",
+    "mode": "dbos",
     "verdict": "SAFE",
     "reason": "",
     "output": "done",
@@ -848,62 +932,150 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
+  },
+  {
+    "case": "YouResearch",
+    "module": "youdotcom",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "AskUser[id]",
     "module": "ask_user",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "CapabilityCreation[id]",
     "module": "capability_creation",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "PyaiDocs[id]",
     "module": "docs",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "LocalStack[id]",
     "module": "localstack",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "Macroscope[id]",
     "module": "macroscope",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "PydanticAIDocs[id]",
     "module": "pydantic_ai_docs",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   },
   {
     "case": "RuntimeAuthoring[id]",
     "module": "runtime_authoring",
-    "mode": "prefect",
-    "verdict": "NO_ID",
-    "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
-    "events": []
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping"
+    ],
+    "seconds": 0.0
   }
 ]

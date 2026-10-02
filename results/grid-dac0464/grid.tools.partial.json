@@ -1,0 +1,44 @@
+[
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "default",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "delegate_task",
+      "read_tool_result"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.4
+  },
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "passthrough",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "reference_error": null,
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "delegate_task",
+      "read_tool_result"
+    ],
+    "blocked_hosts": [],
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "seconds": 0.3
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "case": "Control[unprotected]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "BROKEN",
+    "reason": "workflow-side open at pydantic-ai/pydantic_ai_slim/pydantic_ai/capabilities/combined.py:669 in after_model_request",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "pydantic-ai/pydantic_ai_slim/pydantic_ai/capabilities/combined.py:669 in after_model_request"
+      },
+      {
+        "event": "open",
+        "detail": "('results/scratch/control-ledger.txt', 'a', 16777737)",
+        "where": "pydantic-ai/pydantic_ai_slim/pydantic_ai/capabilities/combined.py:669 in after_model_request"
+      }
+    ],
+    "event_count": 2,
+    "blocked_hosts": [],
+    "workspace": false,
+    "seconds": 0.0
+  },
+  {
+    "case": "Control[durable_operation]",
+    "module": "controls",
+    "mode": "dbos",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": false,
+    "seconds": 0.0
+  }
+]

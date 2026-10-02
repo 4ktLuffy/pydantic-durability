@@ -62,7 +62,7 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 2.2
   },
   {
     "case": "AskUser",
@@ -227,10 +227,10 @@
     "module": "day_ai",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 12455b430 <- WouldBlock: ",
+    "reason": "offline: needs day.ai: CancelledError: Cancelled via cancel scope 121d5def0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12455b430 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 121d5def0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -264,7 +264,7 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "E2BSandbox",
@@ -282,7 +282,7 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "ExaSearch",
@@ -323,10 +323,10 @@
     "module": "github",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 127902c10 <- WouldBlock: ",
+    "reason": "offline: needs api.githubcopilot.com: CancelledError: Cancelled via cancel scope 123192e90 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127902c10 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 123192e90 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -334,17 +334,17 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Grain",
     "module": "grain",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 1279982d0 <- WouldBlock: ",
+    "reason": "offline: needs api.grain.com: CancelledError: Cancelled via cancel scope 124ff37f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 1279982d0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 124ff37f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -413,10 +413,10 @@
     "module": "linear",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 127a2d630 <- WouldBlock: ",
+    "reason": "offline: needs mcp.linear.app: CancelledError: Cancelled via cancel scope 1251098b0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127a2d630 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1251098b0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -424,7 +424,7 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "LocalStack",
@@ -457,10 +457,10 @@
     "module": "logfire_mcp",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 127b8a710 <- WouldBlock: ",
+    "reason": "offline: needs logfire-us.pydantic.dev: CancelledError: Cancelled via cancel scope 12510b2f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 127b8a710 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 12510b2f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -501,10 +501,10 @@
     "module": "notion",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 128647610 <- WouldBlock: ",
+    "reason": "offline: needs mcp.notion.com: CancelledError: Cancelled via cancel scope 125d4b2f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 128647610 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 125d4b2f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -519,10 +519,10 @@
     "module": "ordinal",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 12872d6d0 <- WouldBlock: ",
+    "reason": "offline: needs app.tryordinal.com: CancelledError: Cancelled via cancel scope 125d4a030 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12872d6d0 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 125d4a030 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -530,7 +530,7 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "OverflowingToolOutput",
@@ -563,10 +563,10 @@
     "module": "posthog",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 128d94730 <- WouldBlock: ",
+    "reason": "offline: needs mcp.posthog.com: CancelledError: Cancelled via cancel scope 125e73070 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 128d94730 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 125e73070 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -607,10 +607,10 @@
     "module": "pylon",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 12799a030 <- WouldBlock: ",
+    "reason": "offline: needs mcp.usepylon.com: CancelledError: Cancelled via cancel scope 1263c23f0 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12799a030 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1263c23f0 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -618,7 +618,7 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 0.0
+    "seconds": 0.1
   },
   {
     "case": "RepairToolArguments",
@@ -636,7 +636,7 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "Researcher",
@@ -695,10 +695,10 @@
     "module": "slack",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 129115270 <- WouldBlock: ",
+    "reason": "offline: needs mcp.slack.com: CancelledError: Cancelled via cancel scope 1267fca50 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 129115270 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1267fca50 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -706,7 +706,7 @@
     ],
     "workspace": false,
     "tools_called": [],
-    "seconds": 2.1
+    "seconds": 1.8
   },
   {
     "case": "SpritesSandbox",
@@ -749,10 +749,10 @@
     "module": "stackone",
     "mode": "prefect",
     "verdict": "NOT_RUN",
-    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 12907ab70 <- WouldBlock: ",
+    "reason": "offline: needs api.stackone.com: CancelledError: Cancelled via cancel scope 1263c3390 <- WouldBlock: ",
     "output": null,
     "reference": null,
-    "error": "CancelledError: Cancelled via cancel scope 12907ab70 <- WouldBlock: ",
+    "error": "CancelledError: Cancelled via cancel scope 1263c3390 <- WouldBlock: ",
     "events": [],
     "event_count": 0,
     "blocked_hosts": [
@@ -796,7 +796,7 @@
     "tools_called": [
       "ping"
     ],
-    "seconds": 0.1
+    "seconds": 0.0
   },
   {
     "case": "TrajectoryJudge",
@@ -831,24 +831,6 @@
     "verdict": "NO_ID",
     "reason": "construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to be used with Prefect. The ID will be used to identify the toolset's tasks within the flow. Set it on the toolset itself with `FunctionToolset(id=...)",
     "events": []
-  },
-  {
-    "case": "ExaSearch[dynamic]",
-    "module": "exa",
-    "mode": "prefect",
-    "verdict": "SAFE",
-    "reason": "",
-    "output": "done",
-    "reference": "done",
-    "error": null,
-    "events": [],
-    "event_count": 0,
-    "blocked_hosts": [],
-    "workspace": false,
-    "tools_called": [
-      "ping"
-    ],
-    "seconds": 0.1
   },
   {
     "case": "AskUser[id]",

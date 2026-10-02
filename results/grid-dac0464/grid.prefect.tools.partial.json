@@ -1,0 +1,22 @@
+[
+  {
+    "case": "Researcher",
+    "module": "researcher",
+    "mode": "prefect",
+    "verdict": "SAFE",
+    "reason": "",
+    "output": "done",
+    "reference": "done",
+    "error": null,
+    "events": [],
+    "event_count": 0,
+    "blocked_hosts": [],
+    "workspace": true,
+    "tools_called": [
+      "ping",
+      "delegate_task",
+      "read_tool_result"
+    ],
+    "seconds": 0.1
+  }
+]

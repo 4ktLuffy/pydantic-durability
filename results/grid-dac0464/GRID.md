@@ -1,8 +1,8 @@
 | Engine | BROKEN | FAILED | NO_ID | SANDBOX | REFUSED | NOT_RUN | SAFE |
 |---|---|---|---|---|---|---|---|
-| Temporal | 0 | 0 | 19 | 2 | 3 | 15 | 22 |
-| Prefect | 1 | 0 | 19 | 0 | 3 | 15 | 23 |
-| DBOS | 11 | 0 | 0 | 0 | 3 | 17 | 30 |
+| Temporal | 0 | 0 | 19 | 1 | 3 | 15 | 22 |
+| Prefect | 1 | 0 | 19 | 0 | 3 | 15 | 22 |
+| DBOS | 11 | 0 | 0 | 0 | 3 | 17 | 29 |
 
 | Case | Temporal | Prefect | DBOS | Evidence for the worst cell |
 |---|---|---|---|---|
@@ -59,7 +59,6 @@
 | TrajectoryJudge | REFUSED | REFUSED | REFUSED | WorkflowFailureError: Workflow execution failed <- ApplicationError: UserError: `TrajectoryJudge` cannot be used inside a durable workflow or flow: th |
 | YouSearch | **NO_ID** | **NO_ID** | **BROKEN** | loop.getaddrinfo at `pydantic_ai_harness/youdotcom/_toolset.py:329 in web_search` |
 | YouResearch | **NO_ID** | **NO_ID** | **BROKEN** | loop.getaddrinfo at `pydantic_ai_harness/youdotcom/_research.py:139 in answer` |
-| ExaSearch[dynamic] | SANDBOX | SAFE | SAFE | WorkflowFailureError: Workflow execution failed <- ApplicationError: RestrictedWorkflowAccessError: Cannot access http.client.IncompleteRead.__mro_ent |
 | AskUser[id] | **NO_ID** | **NO_ID** | SAFE | construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to |
 | CapabilityCreation[id] | **NO_ID** | **NO_ID** | **BROKEN** | os.mkdir at `pydantic_ai_harness/capability_creation/_store.py:100 in write` |
 | PyaiDocs[id] | **NO_ID** | **NO_ID** | SAFE | construct: UserError: Toolsets that are 'leaves' (i.e. those that implement their own tool listing and calling) need to have a unique `id` in order to |
